@@ -5,7 +5,7 @@ class OutputDisplay extends React.Component{
 
 
     render(){
-        return <p></p>
+        return <p className='output'></p>
     }
 }
 

@@ -7,7 +7,7 @@ class ClearButton extends React.Component{
     render(){
 
         return(
-            <button type='button'>CLEAR</button>
+            <button className='clear' type='button'>CLEAR</button>
         )
     }
 }

@@ -16,6 +16,7 @@ import SubtractionButton from './SubtractionButton';
 import ThreeButton from './ThreeButton';
 import TwoButton from './TwoButton';
 import ZeroButton from './ZeroButton';
+import './CalculatorBase.css';
 
 class CalculatorBase extends React.Component{
 
