@@ -1,0 +1,46 @@
+$darkpurple: #2A1B3D;
+$yellow: #FAED26;
+
+main {
+    box-shadow: 5px 10px 18px #000;
+}
+
+.baseboard {
+    display: grid;
+    background-color: black;
+    width: 17vw;
+    height: 45vh;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1.25fr repeat(5, 1fr);
+}
+
+button {
+    font-family: 'Lexend Tera', sans-serif;
+    background-color: $darkpurple;
+    border-color: $darkpurple;
+    color: $yellow;
+}
+
+
+.output {
+    grid-column-start: span 4;
+    color: $yellow;
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+#answer{
+    margin-right: 12px; 
+    font-size: 5vh;
+    font-family: 'Lexend Tera', sans-serif;
+}
+
+.clear {
+    grid-column-start: span 4;
+}
+
+#equals, #decimal {
+    font-size: 2vh;
+}

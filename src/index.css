@@ -3,5 +3,10 @@ html, body, #root, #root>div {
     margin: 0;
     display: flex;
     justify-content: center;
+    background-image: url('./milkyway.jpg'); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     
   }

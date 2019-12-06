@@ -5,7 +5,7 @@ class DecimalButton extends React.Component{
 
     render(){
         return(
-            <button type='button'>.</button>
+            <button id="decimal" type='button'>.</button>
         )
     }
 }
