@@ -5,7 +5,7 @@ class OutputDisplay extends React.Component{
 
 
     render(){
-        return <p className='output'></p>
+        return <p className='output'><span id='answer'>12</span></p>
     }
 }
 

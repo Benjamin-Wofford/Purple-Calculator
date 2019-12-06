@@ -8,12 +8,23 @@
     grid-template-rows: 1.25fr repeat(5, 1fr);
 }
 
-.zero {
-    grid-column-start: span 2;
+button {
+    font-family: 'Lexend Tera', sans-serif;
 }
+
 
 .output {
     grid-column-start: span 4;
+    color: white;
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+#answer{
+    margin-right: 12px; 
+    font-size: 5vh;
+    font-family: 'Lexend Tera', sans-serif;
 }
 
 .clear {

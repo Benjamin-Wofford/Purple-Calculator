@@ -8,7 +8,7 @@ class AdditionButton extends React.Component{
 
         return(
 
-            <button type='button'>+</button>
+            <button className='arithmetic' type='button'>+</button>
         )
     }
 }

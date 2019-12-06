@@ -17,6 +17,7 @@ import ThreeButton from './ThreeButton';
 import TwoButton from './TwoButton';
 import ZeroButton from './ZeroButton';
 import './CalculatorBase.css';
+import MultiplicationButton from './MultiplicationButton';
 
 class CalculatorBase extends React.Component{
 
@@ -37,9 +38,10 @@ class CalculatorBase extends React.Component{
                 <OneButton/>
                 <TwoButton/>
                 <ThreeButton/>
-                <EqualsButton/>
+                <MultiplicationButton/>
                 <DecimalButton/>
                 <ZeroButton/>
+                <EqualsButton/>
             </main>
         )
             

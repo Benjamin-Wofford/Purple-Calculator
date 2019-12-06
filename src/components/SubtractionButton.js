@@ -5,7 +5,7 @@ class SubtractionButton extends React.Component{
 
 
     render(){
-        return <button type='button'>-</button>
+        return <button className='arithmetic' type='button'>-</button>
     }
 }
 
