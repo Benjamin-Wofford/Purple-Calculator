@@ -1,11 +1,12 @@
 import React from 'react';
 
 
-class  extends React.Component{
+class OutputDisplay extends React.Component{
 
 
     render(){
-
-        return
+        return <p></p>
     }
 }
+
+export default OutputDisplay;

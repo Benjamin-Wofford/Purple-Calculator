@@ -6,9 +6,8 @@ class EqualsButton extends React.Component{
 
     render(){
 
-        return (
-            <button type='button'>=</button>
-        )
+        return <button type='button'>=</button>
+        
     }
 }
 

@@ -1,11 +1,12 @@
 import React from 'react';
 
 
-class  extends React.Component{
+class SubtractionButton extends React.Component{
 
 
     render(){
-
-        return
+        return <button type='button'>-</button>
     }
 }
+
+export default SubtractionButton;
