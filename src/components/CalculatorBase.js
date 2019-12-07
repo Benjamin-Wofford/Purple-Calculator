@@ -30,7 +30,7 @@ class CalculatorBase extends React.Component{
                 <SevenButton/>
                 <EightButton/>
                 <NineButton/>
-                <SubtractionButton/>
+                <MultiplicationButton/>
                 <FourButton/>
                 <FiveButton/>
                 <SixButton/>
@@ -38,7 +38,7 @@ class CalculatorBase extends React.Component{
                 <OneButton/>
                 <TwoButton/>
                 <ThreeButton/>
-                <MultiplicationButton/>
+                <SubtractionButton/>
                 <DecimalButton/>
                 <ZeroButton/>
                 <EqualsButton/>

@@ -1,5 +1,5 @@
 $darkpurple: #2A1B3D;
-$yellow: #FAED26;
+$white: rgb(251, 251, 251);
 
 main {
     box-shadow: 5px 10px 18px #000;
@@ -19,13 +19,28 @@ button {
     font-family: 'Lexend Tera', sans-serif;
     background-color: $darkpurple;
     border-color: $darkpurple;
-    color: $yellow;
+    color: black;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 3s;
+    
+    &:active{
+        color:white;
+        font-weight: 900;   
+        transform: scale(1.15);
+    }
+}
+
+
+
+button:focus {
+    outline: none;
 }
 
 
 .output {
     grid-column-start: span 4;
-    color: $yellow;
+    color: $white;
     display: flex; 
     justify-content: flex-end; 
     align-items: center;
@@ -41,6 +56,10 @@ button {
     grid-column-start: span 4;
 }
 
-#equals, #decimal {
+#equals, #decimal, .arithmetic {
     font-size: 2vh;
+}
+
+#subtract {
+    font-size: 3vh;
 }
