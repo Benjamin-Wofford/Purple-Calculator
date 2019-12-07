@@ -1,11 +1,21 @@
 $darkpurple: #2A1B3D;
 $white: rgb(251, 251, 251);
 
+
+
+*{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
 main {
     box-shadow: 5px 10px 18px #000;
+    
 }
 
 .baseboard {
+    border-radius: 15px;
     display: grid;
     background-color: black;
     width: 17vw;
@@ -19,16 +29,12 @@ button {
     font-family: 'Lexend Tera', sans-serif;
     background-color: $darkpurple;
     border-color: $darkpurple;
-    color: black;
-    transform: scale(1);
-    transition-property: transform;
-    transition-duration: 3s;
-    
+    color: $white;
+    transition: background-color 400ms;
     &:active{
-        color:white;
-        font-weight: 900;   
-        transform: scale(1.15);
+        background-color: darken($darkpurple, 5%)
     }
+    
 }
 
 
@@ -62,4 +68,12 @@ button:focus {
 
 #subtract {
     font-size: 3vh;
+}
+
+#equals{
+    border-radius: 0px 0px 15px 0px;
+}
+
+#subtract{
+    border-radius: 0px 0px 0px 15px;
 }
