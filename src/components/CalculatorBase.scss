@@ -30,7 +30,7 @@ button {
     background-color: $darkpurple;
     border-color: $darkpurple;
     color: $white;
-    transition: background-color 400ms;
+    transition: background-color 300ms;
     &:active{
         background-color: darken($darkpurple, 5%)
     }
