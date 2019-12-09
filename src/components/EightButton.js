@@ -4,7 +4,7 @@ import React from 'react';
 class EightButton extends React.Component{
 
     render(){
-        return  <button type='button'>8</button>
+        return  <button onClick={() => this.props.handleClick(8)}>8</button>
     }
 }
 

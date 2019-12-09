@@ -4,7 +4,7 @@ import React from 'react';
 class FiveButton extends React.Component{
 
     render(){
-        return <button type='button'>5</button>
+        return <button onClick={()=> this.props.handleClick(5)}>5</button>
     }
 }
 

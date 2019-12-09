@@ -27,10 +27,18 @@ class CalculatorBase extends React.Component{
         this.state = {
             output: 0
         }
+        this.handleClick = this.handleClick.bind(this)
     }
- // this needs to have state that I can change and then output the state to the span
-// this is the only one that needs state. I will also need a set state method and then I will pass that method down to 
-//stateless children... but the thing is.. this doesn't have any children
+
+        handleClick(currentButtonClicked){
+            this.setState(prevState => {
+                return {
+                    output: `${prevState.output === 0 ? currentButtonClicked : prevState.output + currentButtonClicked}`
+                }
+            })
+        }
+
+        clear
 
     render(){
         return (
@@ -38,20 +46,20 @@ class CalculatorBase extends React.Component{
                 <OutputDisplay placeThisOnScreen={this.state.output}/>
                 <ClearButton/>
                 <DivisionButton/>
-                <SevenButton/>
-                <EightButton/>
-                <NineButton/>
+                <SevenButton handleClick={this.handleClick}/>
+                <EightButton handleClick={this.handleClick}/>
+                <NineButton handleClick={this.handleClick}/>
                 <MultiplicationButton/>
-                <FourButton/>
-                <FiveButton/>
-                <SixButton/>
+                <FourButton handleClick={this.handleClick}/>
+                <FiveButton handleClick={this.handleClick}/>
+                <SixButton handleClick={this.handleClick}/>
                 <AdditionButton/>
-                <OneButton/>
-                <TwoButton/>
-                <ThreeButton/>
+                <OneButton handleClick={this.handleClick}/>
+                <TwoButton handleClick={this.handleClick}/>
+                <ThreeButton handleClick={this.handleClick}/>
                 <SubtractionButton/>
                 <DecimalButton/>
-                <ZeroButton/>
+                <ZeroButton handleClick={this.handleClick}/>
                 <EqualsButton/>
             </main>
         )

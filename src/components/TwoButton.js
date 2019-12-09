@@ -4,7 +4,7 @@ import React from 'react';
 class TwoButton extends React.Component{
 
     render(){
-        return <button type='button'>2</button>
+        return <button onClick={()=>this.props.handleClick(2)}>2</button>
     }
 }
 
