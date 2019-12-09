@@ -22,10 +22,20 @@ import MultiplicationButton from './MultiplicationButton';
 
 class CalculatorBase extends React.Component{
 
+    constructor(props){
+        super(props)
+        this.state = {
+            output: 0
+        }
+    }
+ // this needs to have state that I can change and then output the state to the span
+// this is the only one that needs state. I will also need a set state method and then I will pass that method down to 
+//stateless children... but the thing is.. this doesn't have any children
+
     render(){
         return (
             <main className="baseboard">
-                <OutputDisplay/>
+                <OutputDisplay placeThisOnScreen={this.state.output}/>
                 <ClearButton/>
                 <DivisionButton/>
                 <SevenButton/>
