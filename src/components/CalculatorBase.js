@@ -35,7 +35,7 @@ class CalculatorBase extends React.Component{
         handleClick(currentButtonClicked){
             this.setState(prevState => {
                 return {
-                    output: `${prevState.output === 0 ? currentButtonClicked : prevState.output + currentButtonClicked}`
+                    output: prevState.output === 0 ? currentButtonClicked : `${prevState.output}` + currentButtonClicked
                 }
             })
         }
@@ -48,7 +48,7 @@ class CalculatorBase extends React.Component{
         
           this.setState(prevState => {
                     return {
-                        output: isNaN(prevState.output.slice(-1)) ? prevState.output : eval(prevState.output)
+                        output: isNaN(prevState.output.toString().slice(-1)) ? prevState.output : eval(prevState.output)
                     }
                 })
             }
