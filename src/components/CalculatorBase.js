@@ -28,6 +28,8 @@ class CalculatorBase extends React.Component{
             output: 0
         }
         this.handleClick = this.handleClick.bind(this)
+        this.handleClear = this.handleClear.bind(this)
+        this.handleEquals = this.handleEquals.bind(this)
     }
 
         handleClick(currentButtonClicked){
@@ -38,29 +40,42 @@ class CalculatorBase extends React.Component{
             })
         }
 
-        clear
+        handleClear(){
+            this.setState({output: 0})
+        }
+
+        handleEquals(){
+        
+          this.setState(prevState => {
+                    return {
+                        output: isNaN(prevState.output.slice(-1)) ? prevState.output : eval(prevState.output)
+                    }
+                })
+            }
+        
+
 
     render(){
         return (
             <main className="baseboard">
                 <OutputDisplay placeThisOnScreen={this.state.output}/>
-                <ClearButton/>
-                <DivisionButton/>
+                <ClearButton handleClear={this.handleClear}/>
+                <DivisionButton handleClick={this.handleClick}/>
                 <SevenButton handleClick={this.handleClick}/>
                 <EightButton handleClick={this.handleClick}/>
                 <NineButton handleClick={this.handleClick}/>
-                <MultiplicationButton/>
+                <MultiplicationButton handleClick={this.handleClick} />
                 <FourButton handleClick={this.handleClick}/>
                 <FiveButton handleClick={this.handleClick}/>
                 <SixButton handleClick={this.handleClick}/>
-                <AdditionButton/>
+                <AdditionButton handleClick={this.handleClick}/>
                 <OneButton handleClick={this.handleClick}/>
                 <TwoButton handleClick={this.handleClick}/>
                 <ThreeButton handleClick={this.handleClick}/>
-                <SubtractionButton/>
-                <DecimalButton/>
+                <SubtractionButton handleClick={this.handleClick}/>
+                <DecimalButton handleClick={this.handleClick}/>
                 <ZeroButton handleClick={this.handleClick}/>
-                <EqualsButton/>
+                <EqualsButton handleEquals={this.handleEquals}/>
             </main>
         )
             

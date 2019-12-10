@@ -8,7 +8,7 @@ class AdditionButton extends React.Component{
 
         return(
             
-                <button className='arithmetic' type='button'>+</button>
+                <button className='arithmetic' onClick={() => this.props.handleClick("+")}>+</button>
             
         )
     }

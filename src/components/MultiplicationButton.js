@@ -3,7 +3,7 @@ import React from 'react';
 class MultiplicationButton extends React.Component{
 
     render(){
-        return <button className='arithmetic' type='button'>&#215;</button>
+        return <button className='arithmetic' onClick={() => this.props.handleClick("*")}>&#215;</button>
     }
 }
 

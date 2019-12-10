@@ -7,7 +7,7 @@ class DivisionButton extends React.Component{
     render(){
 
         return(
-            <button className='arithmetic' type='button'>&#247;</button>
+            <button className='arithmetic' onClick={() => this.props.handleClick("/")}>&#247;</button>
         )
     }
 }
