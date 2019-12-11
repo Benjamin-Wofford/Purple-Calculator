@@ -6,7 +6,7 @@ html, body, #root, #root>div {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23330055' cx='50' cy='0' r='50'/%3E%3Cg fill='%2338005b' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%233e0160' cx='50' cy='100' r='50'/%3E%3Cg fill='%23430166' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%2349026c' cx='50' cy='200' r='50'/%3E%3Cg fill='%234e0272' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23540377' cx='50' cy='300' r='50'/%3E%3Cg fill='%235a037d' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23600483' cx='50' cy='400' r='50'/%3E%3Cg fill='%23660489' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%236c048f' cx='50' cy='500' r='50'/%3E%3Cg fill='%23720595' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%2379059a' cx='50' cy='600' r='50'/%3E%3Cg fill='%237f05a0' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%238605a6' cx='50' cy='700' r='50'/%3E%3Cg fill='%238c04ac' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%239304b2' cx='50' cy='800' r='50'/%3E%3Cg fill='%239a03b8' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a103bd' cx='50' cy='900' r='50'/%3E%3Cg fill='%23a801c3' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23af00c9' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
     background-size: contain;
-
+    position: relative;
     animation-name: slideFromTop;
     animation-iteration-count: 1;
     animation-duration: 400ms;
@@ -15,9 +15,9 @@ html, body, #root, #root>div {
 
   @keyframes slideFromTop {
     0% {
-        height: 0%;
+        top: -100vh;
     }
     100% {
-        height: 100%;
+        top: 0vh;
     }
 }
