@@ -23,19 +23,7 @@ main {
     margin: auto;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1.25fr repeat(5, 1fr);
-    animation-name: slideFromTop;
-    animation-iteration-count: 1;
-    animation-duration: 400ms;
 
-}
-
-@keyframes slideFromTop {
-    0% {
-        transform: translateY(0vh)
-    }
-    100% {
-        transform: translateY(30vh)
-    }
 }
 
 button {
