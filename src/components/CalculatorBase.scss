@@ -51,13 +51,24 @@ button:focus {
     display: flex; 
     justify-content: flex-end; 
     align-items: center;
+    word-wrap: break-word;
 }
 
 #answer{
     margin-right: 12px; 
     font-size: 5vh;
     font-family: 'Lexend Tera', sans-serif;
-}
+    overflow: hidden;
+    width: 100%;
+    display: block; 
+    word-wrap: break-word;
+    white-space: normal;
+
+        div {
+          direction: rtl;
+        }
+      }
+
 
 .clear {
     grid-column-start: span 4;

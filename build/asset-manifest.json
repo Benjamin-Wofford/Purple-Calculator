@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/purple-calculator/static/css/main.44041ac0.chunk.css",
+    "main.js": "/purple-calculator/static/js/main.ace6ce1f.chunk.js",
+    "main.js.map": "/purple-calculator/static/js/main.ace6ce1f.chunk.js.map",
+    "runtime-main.js": "/purple-calculator/static/js/runtime-main.599156da.js",
+    "runtime-main.js.map": "/purple-calculator/static/js/runtime-main.599156da.js.map",
+    "static/js/2.23f90349.chunk.js": "/purple-calculator/static/js/2.23f90349.chunk.js",
+    "static/js/2.23f90349.chunk.js.map": "/purple-calculator/static/js/2.23f90349.chunk.js.map",
+    "index.html": "/purple-calculator/index.html",
+    "precache-manifest.58c928e3bff18a9ea1f0e2dbee3ea974.js": "/purple-calculator/precache-manifest.58c928e3bff18a9ea1f0e2dbee3ea974.js",
+    "service-worker.js": "/purple-calculator/service-worker.js",
+    "static/css/main.44041ac0.chunk.css.map": "/purple-calculator/static/css/main.44041ac0.chunk.css.map",
+    "static/js/2.23f90349.chunk.js.LICENSE": "/purple-calculator/static/js/2.23f90349.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.599156da.js",
+    "static/js/2.23f90349.chunk.js",
+    "static/css/main.44041ac0.chunk.css",
+    "static/js/main.ace6ce1f.chunk.js"
+  ]
+}
