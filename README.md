@@ -5,7 +5,7 @@ So, I decided what better way to do that than to build my own calculator? Eventu
 
 ## Getting Started
 
-To get started just clicked on this URL: 
+To get started just clicked on this URL: https://purple-calculator.firebaseapp.com/
 
 ## Built With
 
