@@ -54,9 +54,17 @@ button:focus {
 }
 
 #answer{
-    margin-right: 12px; 
+    margin-left: 12px; 
     font-size: 5vh;
     font-family: 'Lexend Tera', sans-serif;
+    width: 100%;
+    display: block;
+    word-wrap: break-word;
+    white-space: normal;
+
+  > div {
+    direction: rtl;
+  }
 }
 
 .clear {
