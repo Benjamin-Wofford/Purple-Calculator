@@ -1,5 +1,5 @@
 {
-  "homepage": "https://benjamin-wofford.github.io/Purple-Calculator",
+  "homepage": "https://purple-calculator.firebaseapp.com",
   "name": "calculator",
   "version": "0.1.0",
   "private": true,
@@ -38,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
   }
 }
