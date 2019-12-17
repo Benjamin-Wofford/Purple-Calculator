@@ -45,11 +45,15 @@ class CalculatorBase extends React.Component{
         }
 
         handleEquals(){
-        
           this.setState(prevState => {
+            if (this.state.output === "/0"){
+                return {
+                    output: 0
+                }
+            } else {
                     return {
                         output: isNaN(prevState.output.toString().slice(-1)) ? prevState.output : eval(prevState.output)
-                    }
+                    }}
                 })
             }
         
