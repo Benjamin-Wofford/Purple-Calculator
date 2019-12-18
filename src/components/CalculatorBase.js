@@ -49,7 +49,7 @@ class CalculatorBase extends React.Component {
     this.setState(prevState => {
       if (this.state.output === "/0") {
         return {
-          output: 0
+          output: "undefined"
         };
       } else {
         return {
@@ -60,6 +60,9 @@ class CalculatorBase extends React.Component {
       }
     });
   }
+
+
+
 
   render() {
     return (
