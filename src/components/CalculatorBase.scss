@@ -1,88 +1,87 @@
-$darkpurple: #2A1B3D;
+$darkpurple: #2a1b3d;
 $white: rgb(251, 251, 251);
 
-
-
 * {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 main {
-    box-shadow: 5px 10px 18px #000;
-    
+  box-shadow: 5px 10px 18px #000;
 }
 
 .baseboard {
-    border-radius: 15px;
-    display: grid;
-    background-color: black;
-    width: 17vw;
-    height: 45vh;
-    margin: auto;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1.25fr repeat(5, 1fr);
+  border-radius: 15px;
+  display: grid;
+  background-color: black;
 
+  height: 45vh;
+  margin: auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1.25fr repeat(5, 1fr);
+}
+
+@media screen and (min-width: 1050px) {
+  .baseboard {
+    width: 20vw;
+  }
 }
 
 button {
-    font-family: 'Lexend Tera', sans-serif;
-    background-color: $darkpurple;
-    border-color: $darkpurple;
-    color: $white;
-    transition: background-color 300ms;
-    &:active{
-        background-color: darken($darkpurple, 5%)
-    }
-    
+  font-family: "Lexend Tera", sans-serif;
+  background-color: $darkpurple;
+  border-color: $darkpurple;
+  color: $white;
+  transition: background-color 300ms;
+  &:active {
+    background-color: darken($darkpurple, 5%);
+  }
 }
-
-
 
 button:focus {
-    outline: none;
+  outline: none;
 }
-
 
 .output {
-    grid-column-start: span 4;
-    color: $white;
-    display: flex; 
-    justify-content: flex-end; 
-    align-items: center;
+  grid-column-start: span 4;
+  color: $white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-#answer{
-    margin-left: 12px; 
-    font-size: 5vh;
-    font-family: 'Lexend Tera', sans-serif;
-    width: 100%;
-    display: block;
-    word-wrap: break-word;
-    white-space: normal;
-
+#answer {
+  margin-left: 12px;
+  font-size: 2rem;
+  font-family: "Lexend Tera", sans-serif;
+  width: 100%;
+  display: block;
+  word-wrap: break-word;
+  white-space: normal;
   > div {
     direction: rtl;
   }
 }
 
 .clear {
-    grid-column-start: span 4;
+  grid-column-start: span 4;
 }
 
-#equals, #decimal, .arithmetic {
-    font-size: 2vh;
+#equals,
+#decimal,
+.arithmetic {
+  font-size: 2vh;
 }
 
 #subtract {
-    font-size: 3vh;
+  font-size: 3vh;
 }
 
-#equals{
-    border-radius: 0px 0px 15px 0px;
+#equals {
+  border-radius: 0px 0px 15px 0px;
 }
 
-#subtract{
-    border-radius: 0px 0px 0px 15px;
+#subtract {
+  border-radius: 0px 0px 0px 15px;
 }
